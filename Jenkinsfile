@@ -4,7 +4,7 @@ node {
   }
 
   stage('deploy') {
-    devSpaces aksName: env.SAPCE_NAME, 
+    devSpaces aksName: env.AKS_NAME, 
         azureCredentialsId: env.CRED_ID,
         repoPath: env.REPO_PATH, 
         resourceGroupName: 'myresourcegroup', 

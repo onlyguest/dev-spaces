@@ -5,10 +5,12 @@ node {
 
   stage('deploy') {
     devSpaces aksName: 'myAKS', 
-        azureCredentialsId: 'prin',
+        azureCredentialsId: env.CRED_ID,
         repoPath: env.REPO_PATH, 
         resourceGroupName: 'myresourcegroup', 
         sharedSpaceName: 'default', 
         spaceName: env.SPACE_NAME
+    
+    echo $dsEndpoint
   }
 }

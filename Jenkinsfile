@@ -11,6 +11,6 @@ node {
         sharedSpaceName: 'default', 
         spaceName: env.SPACE_NAME
     
-    echo $dsEndpoint
+    bat 'set dsEndpoint'
   }
 }
